@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'sudo docker build -t FlaskImageApp .'
+                sh 'sudo docker build -t FlaskImageApp:latest .'
             }
          stage('Hello') {
             steps {
