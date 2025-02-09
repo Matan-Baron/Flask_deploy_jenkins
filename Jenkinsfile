@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('build') {
             steps {
-                echo 'Hello World'
+                sh 'sudo docker build -t FlaskImageApp .'
             }
          stage('Hello') {
             steps {
